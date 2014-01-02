@@ -403,6 +403,11 @@ table.plain {
     letter-spacing: 0;
 }
 
+.blog-description a:link,
+.blog-description a:visited {
+    color: #f0f0f0;
+}
+
 /* Every post, on every page, gets this style on its <article> tag */
 .post {
     position: relative;
