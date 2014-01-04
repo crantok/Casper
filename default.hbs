@@ -23,7 +23,23 @@
 <body class="{{body_class}}">
 
     {{! Everything else gets inserted here }}
-    {{{body}}}
+
+    <div class="body">
+      {{{body}}}
+    </div>
+
+    <div class="sidebar">
+      <h3 class="widget-title"><label for="btr_email">Email Subscription</label></h3>
+      <form method='post' action='http://blogtrottr.com'>
+	<p>Enter your email address to subscribe to this blog and receive notifications of new posts by email.</p>
+        <input type='text' name='btr_email' /><br />
+        <input type='hidden' name='btr_url' value='http://FEED_URL' />
+        <input type='hidden' name='schedule_type' value='0' />
+        <input type='submit' value='Sign me up!' />
+      </form>
+    </div>
+
+    <div class=-"clearfix"></div>
 
     <footer class="site-footer">
         <a class="subscribe icon-feed" href="{{@blog.url}}/rss/"><span class="tooltip">Subscribe!</span></a>
