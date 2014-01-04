@@ -356,6 +356,12 @@ table.plain {
    4. General - The main styles for the the theme
    ========================================================================== */
 
+/* Sidebar */
+body > .sidebar {
+    float: right;
+    width: 20%;
+}
+
 /* Big cover image on the home page */
 #site-head {
     position: relative;
@@ -775,6 +781,12 @@ table.plain {
    ========================================================================== */
 
 @media only screen and (max-width: 900px) {
+
+    /* Sidebar */
+    body > .sidebar {
+        float: none;
+        width: 100%;
+    }
 
     blockquote {
         margin-left: 0;
