@@ -357,7 +357,7 @@ table.plain {
    ========================================================================== */
 
 /* Sidebar */
-body > .sidebar-wrapper > .sidebar {
+body > .sidebar-container > .sidebar {
     float: right;
     width: 20%;
 }
@@ -783,7 +783,7 @@ body > .sidebar-wrapper > .sidebar {
 @media only screen and (max-width: 900px) {
 
     /* Sidebar */
-    body > .sidebar-wrapper > .sidebar {
+    body > .sidebar-container > .sidebar {
         float: none;
         width: 100%;
     }
